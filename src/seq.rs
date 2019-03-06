@@ -98,4 +98,39 @@ mod tests {
 		assert_eq!(steps.next(), Some(Run::Double(1, 1)));
 		assert_eq!(steps.next(), Some(Run::Single(2)));
 	}
+
+	// #[test]
+	// fn benchmark() {
+	// 	let seq = KolSeq::new();
+
+	// 	let mut steps = seq.take(100000000000000);
+
+	// 	let mut ones = 0;
+	// 	let mut twos = 0;
+
+	// 	for step in steps {
+	// 		match step {
+	// 			Run::Single(val) => {
+	// 				if val == 1 {
+	// 					ones += 1;
+	// 				} else {
+	// 					twos += 1;
+	// 				}
+	// 			}
+	// 			Run::Double(first, second) => {
+	// 				if first == 1 {
+	// 					ones += 1;
+	// 				} else {
+	// 					twos += 1;
+	// 				}
+
+	// 				if second == 1 {
+	// 					ones += 1;
+	// 				} else {
+	// 					twos += 1;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
